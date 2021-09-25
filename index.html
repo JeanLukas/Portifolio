@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Jean Lukas</title>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <header>
         <div class="container">
+            <img src="assets/logo.png" alt="logo">
             <h2>Hi,</h2>
             <h1>I am Jean Lukas</h1>
             <p>Sou desenvolvedor de software, curso análise e desenvolvimento de sistemas, ja trabalhei com ReactJS, HTML, CSS, Kotlin, mas possuo conhecimento em PHP, Phyton</p>
@@ -20,13 +22,17 @@
         <nav>
             <img src="assets/logo.png" alt="logo">
             <ul>
-                <a href="">About</a>
-                <a href="">Services</a>
-                <a href="">Portifolio</a>
-                <a href="">Resume</a>
-                <a href="">Contact</a>
+                <a href=""><i data-feather="user"></i> About</a>
+                <a href=""><i data-feather="briefcase"></i>Services</a>
+                <a href=""><i data-feather="image"></i>Portifolio</a>
+                <a href=""><i data-feather="list"></i>Resume</a>
+                <a href=""><i data-feather="send"></i>Contact</a>
             </ul>
         </nav>
         <section>AOBA</section>
+
+        <script>
+            feather.replace()
+        </script>
 </body>
 </html>
