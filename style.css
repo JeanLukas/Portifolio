@@ -41,6 +41,12 @@ button{
     font-weight: bold;
     font-size: 18px;
 }
+.tittle-purple{
+    color: var(--purple);
+}
+.tittle-red{
+    color: var(--red);
+}
 header{
     height: calc(100vh - var(--menu-height));
     border: 0;
@@ -90,11 +96,21 @@ nav ul a{
 nav ul a svg{
     display: none;
 }
-section{
-    height: 1500px;
-    background: chartreuse;
+.about{
+    display: flex;
+    padding: 100px;
 }
-
+.about .container{
+    width: 50%;
+    padding-right: 50px;
+}
+.about .img-container{
+   width: 50%;
+}
+.about .img-container img{
+    width: 70%;
+    text-align: center;
+}
 /* RESPONSIVE */
 @media (max-width: 1000px){
     header .container{
