@@ -76,6 +76,7 @@ nav{
     padding: 0 100px;
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 nav img{
     height: 45px;
@@ -112,6 +113,7 @@ nav ul a svg{
     width: 70%;
     text-align: center;
     height: 100%;
+    object-fit: cover;
 }
 .about .img-container .line{
     width: calc(70% + 50px);
@@ -126,7 +128,10 @@ nav ul a svg{
     transform: rotate(3.3deg);
     color: var(--red);
 }
+
 /* RESPONSIVE */
+
+
 @media (max-width: 1000px){
     header .container{
         width: 100%;
@@ -136,6 +141,18 @@ nav ul a svg{
     }
     nav{
         padding: 0 30px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .container, .about .img-container{
+        width: 100%;
+    }
+    .about .container{
+        padding-right: 0;
+    }
+    .about .img-container{
+        margin: 70px 0;
     }
 }
 @media (max-width: 767px){
@@ -177,5 +194,8 @@ nav ul a svg{
     nav ul a svg{
         display: block;
         margin: 0 auto 10px;
+    }
+    .about{
+        padding: 40px;
     }
 }
